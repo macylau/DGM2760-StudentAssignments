@@ -18,14 +18,14 @@ function evalGuess() {
     const feedback = document.querySelector('#feedback')
 
     if (gamerGuess == correctNumber) {
-        feedback.innerText = 'You are a winner!!!'
+        feedback.innerText = 'You Are Correct!'
         giveAward()
     }
     else if (gamerGuess > correctNumber && gamerGuess < 16) {
-        feedback.innerText = 'Too high, try again.'
+        feedback.innerText = 'Your Guess Was too Low, Try again.' 
     }
     else if (gamerGuess < correctNumber && gamerGuess > 0) {
-        feedback.innerText = 'Too low, try again.'
+        feedback.innerText = 'Your Guess Was too High, Try again.'
     }
     else {
         feedback.innerText = 'Please Choose a number between 1 & 15 and try again.'
@@ -38,31 +38,30 @@ function evalGuess() {
 }// End of evalGuess() Function
 
 function giveAward() {
+    console.log('Congratulations!')
     let imgPath = 'images/yellowribbon.png'
     switch(totalGuesses) {
         case 1:
         case 2:
         case 3: 
             imgPath = 'images/blueribbon.png'
-            console.log('Blue Ribbon for you')
             break;
         case 4:
         case 5:
         case 6: 
             imgPath = 'images/redribbon.png'
-            console.log('Red Ribbon for you')
             break;
         case 7:
-            console.log('Yellow Ribbon for you')
             break;
     }
 
-    let awardImage = document.createElement('img') //Creates a <img> element in the 
+    const awardImage = document.createElement('img') //Creates a <img> element 
     awardImage.setAttribute('src', imgPath)
 
     const ribbon = document.querySelector('#ribbon') //assigns ribbon to #ribbon div in DOM
     ribbon.appendChild(awardImage)
 
+    // only appendchild of the ribbon element does not have any child nodes yet
     
     
 }
