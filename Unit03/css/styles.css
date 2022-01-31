@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 880px;
+    background-image: url("../images/03banner.jpeg");
+    height: 300px;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    margin: 0 30px;
+    font-size: 48px;
+    text-shadow: 2px 2px 5px black;
+}
+
+header h2{
+    color: #fff;
+    margin: 10px 30px;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+}
+
+main {
+    margin: 10px 30px;
+}
+main h1{
+    color: rgb(172, 97, 35);
+}
+
+main h2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 121, 40);
+    padding: 0 20px;
+}
+
+main ul {
+    padding: 0 20px;
+}
+
+main ul li {
+    list-style-type: none;
+    padding: 2px;
+}
+
+main ul li i {
+    padding: 0 10px;
+    color: rgb(172, 97, 35);
+}
+
+main p {
+    padding: 0 20px;
+}
+
+footer {
+    margin: 0 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(185, 127, 80);
+}
