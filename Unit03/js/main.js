@@ -22,10 +22,10 @@ function evalGuess() {
         giveAward()
     }
     else if (gamerGuess > correctNumber && gamerGuess < 16) {
-        feedback.innerText = 'Your Guess Was too high, Try again.' 
+        feedback.innerText = 'Your Guess Was too High, Try again.' 
     }
     else if (gamerGuess < correctNumber && gamerGuess > 0) {
-        feedback.innerText = 'Your Guess Was too low, Try again.'
+        feedback.innerText = 'Your Guess Was too Low, Try again.'
     }
     else {
         feedback.innerText = 'Please Choose a number between 1 & 15 and try again.'
