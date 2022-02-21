@@ -86,10 +86,11 @@ button {
     background-color: rgb(255, 232, 181);
     border-radius: 5px;
     border: 2px solid rgb(172, 97, 35);
+    cursor: pointer;
 }
 
-span {
-    color: red;
+.story {
+    margin-top: 10px;
 }
 
 footer {
