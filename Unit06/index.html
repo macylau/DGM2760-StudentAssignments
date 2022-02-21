@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 The Arborist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stlyes.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nonsense Story</h1>
+        <h2>String Manipulation</h2>
+    </header>
+    <main>
+        <div class="outlines">
+        <h1>The Tale of Peter Rabbit</h1>
+        <h2>What I learned</h2>
+        <ul class="objectives" >
+            <li><i class="fa fa-check-square-o"></i>Extract text content from html element</li>
+            <li><i class="fa fa-check-square-o"></i>Convert a string into an array</li>
+            <li><i class="fa fa-check-square-o"></i>Access elements of an array</li>
+            <li><i class="fa fa-check-square-o"></i>Escape string characters</li>
+            <li><i class="fa fa-check-square-o"></i>String Concatenation</li>
+            <li><i class="fa fa-check-square-o"></i>Change a string to all lower case</li>
+        </ul>
+        </div>
+        <div class="container">
+        <article>
+            <h2>Seven Nouns</h2>
+            <textarea id="nouns">
+Cat
+Husky
+Chicken
+Macy
+Plate
+Neighbor
+Yard
+            </textarea>
+        </article>
+
+        <article>
+            <h2>Three Adjectives</h2>
+            <textarea id="adjectives">Sneaky
+Playful
+Yummy
+            </textarea>
+        </article>
+
+        <article>
+            <h2>Two Verbs</h2>
+            <textarea id="verbs">Steal
+Eat
+            </textarea>
+        </article>
+        </div>
+        <button type="button" onclick="tellStory()">Tell the Story</button>
+        <p id="story"></p>
+
+        <div class="results" id="results">
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>Assignment for DGM2760 by Macy Lau</p>
+    </footer>
+    <script type="text/JavaScript" src="js/main.js"></script>
+</body>
+</html>

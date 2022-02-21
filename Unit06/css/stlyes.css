@@ -1,0 +1,100 @@
+/* body h1,h2,h3,h4,h6,ul, li {
+    margin: 0;
+} */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 880px;
+    background-image: url("../images/peter-rabbit.jpeg");
+    height: 300px;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    margin: 0 30px;
+    font-size: 48px;
+    text-shadow: 2px 2px 5px black;
+}
+
+header h2{
+    color: #fff;
+    margin: 10px 30px;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+}
+
+main {
+    margin: 10px 30px;
+}
+
+.outlines h1{
+    color: rgb(172, 97, 35);
+}
+
+.outlines h2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 121, 40);
+    padding: 0 20px;
+}
+
+.outlines ul {
+    padding: 0 20px;
+}
+
+.outlines ul li {
+    list-style-type: none;
+    padding: 2px;
+}
+
+.outlines ul li i {
+    padding: 0 10px;
+    color: rgb(172, 97, 35);
+}
+
+.outlines p {
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article textarea {
+    width: 250px;
+    height: 120px;
+    text-align: left;
+    margin-top: 0;
+}
+
+article h2 {
+    color: rgb(172, 97, 35);
+    margin: 0;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: rgb(255, 232, 181);
+    border-radius: 5px;
+    border: 2px solid rgb(172, 97, 35);
+}
+
+span {
+    color: red;
+}
+
+footer {
+    margin: 0 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(185, 127, 80);
+}
