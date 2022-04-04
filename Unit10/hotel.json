@@ -1,0 +1,29 @@
+{
+    "hotels": [
+        {
+            "name": "Marriott",
+            "rooms": "50",
+            "gym": "Yes",
+            "roomTypes": ["King", " Queen", " Double"],
+            "address": "258 N 25 W",
+            "picture": "room1.jpg"
+        },
+        {
+            "name": "Sheraton",
+            "rooms": "55",
+            "gym": "Yes",
+            "roomTypes": ["King", " Queen", " Double"],
+            "address": "1000 S 50 W",
+            "picture": "room2.jpg"
+        },
+        {
+            "name": "Hilton",
+            "rooms": "45",
+            "gym": "No",
+            "roomTypes": ["King", " Queen", " Double"],
+            "address": "500 N 75 W",
+            "picture": "room3.jpg"
+        }
+
+    ]
+}
