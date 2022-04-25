@@ -6,9 +6,8 @@ const options = {
 	}
 };
 
-fetch('https://tasty.p.rapidapi.com/recipes/auto-complete?prefix=chicken%20soup', options)
+fetch('https://tasty.p.rapidapi.com/recipes/auto-complete?prefix=salad', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
 
-console.log(options);
