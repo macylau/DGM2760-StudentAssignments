@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -21,15 +25,62 @@ header h1 {
     font-family: 'Amatic SC', cursive;
 }
 
-
 main {
     margin: 10px 30px;
 }
 main h1{
-    color: rgb(172, 97, 35);
+    color: rgb(65, 65, 65);
 }
 
+.searchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
 
+.searchBar {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 40px;
+    border: 2px solid rgb(134, 165, 201);
+    border-radius: 15px 0px 0px 15px;
+}
+
+#nameInput {
+    width: 700px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    border: none;
+    background: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#searchBtn{
+    width: 50px;
+    color: rgb(73, 73, 73);
+    cursor: pointer;
+}
+
+#random {
+    padding: 10px;
+    background: rgb(134, 165, 201);
+    border-radius: 0px 15px 15px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(43, 43, 43);
+}
+
+.results {
+    height: 800px;
+}
 
 footer {
     margin: 0 30px;
