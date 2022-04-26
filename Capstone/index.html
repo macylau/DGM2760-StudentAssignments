@@ -4,10 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasty Recipes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
 <body>
@@ -16,17 +16,12 @@
     </header>
     <main>
         <h1>Recipes</h1>
-        <form class="searchForm">
-            <input type="search" class="searchForm-input">
-            <button type="submit" class="icon searchIcon">
-              <img src="https://image.ibb.co/cpG8zk/search.png" alt="Magnifying Glass Icon">
-            </button>
-            <a href="#" target="_blank" rel="noopener" class="icon randomIcon">
-              <img src="https://image.ibb.co/fR5OX5/random.png" alt="Shuffle Icon">
-            </a>
-          </form>
+        <div id="searchBar">
+        <input type="text" id="nameInput" placeholder="Search for recipes">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
 
-          <section class="results"></section>
+        <section class="results"></section>
 
     </main>
     
