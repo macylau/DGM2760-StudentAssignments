@@ -16,7 +16,7 @@ header{
 }
 
 header h1 {
-    color: rgb(100, 245, 255);
+    color: rgb(142, 225, 231);
     margin: 0 30px;
     font-size: 72px;
     text-shadow: 2px 2px 5px black;
@@ -36,24 +36,24 @@ main h1{
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
+    
 }
 
 .searchBar {
     display: flex;
     justify-content: center;
-    width: 700px;
     height: 40px;
-    border: 2px solid rgb(134, 165, 201);
-    border-radius: 15px 0px 0px 15px;
 }
 
 #nameInput {
-    width: 700px;
+    width: 600px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 200;
-    border: none;
+    border: 2px solid rgb(134, 165, 201);
+    border-radius: 15px 0px 0px 15px;
+    border-right: 0;
     background: none;
 }
 
@@ -66,16 +66,21 @@ button {
     width: 50px;
     color: rgb(73, 73, 73);
     cursor: pointer;
+    border: 2px solid rgb(134, 165, 201);
+    border-left: 0;
+    margin: 0px;
 }
 
 #random {
-    padding: 10px;
+    padding: 10px 20px;
     background: rgb(134, 165, 201);
     border-radius: 0px 15px 15px 0px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: rgb(43, 43, 43);
+    cursor: pointer;
+    position: relative;
 }
 
 .results {
