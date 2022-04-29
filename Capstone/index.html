@@ -1,36 +1,48 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasty Recipes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:wght@200;400&family=Square+Peg&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:wght@200;400&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Tasty Recipes</h1>
+      <h1>Tasty Recipes</h1>
     </header>
     <main>
-        <h1>Search recipes by name or ingredients</h1>
-        <div class="searchContainer">
-            <form class="searchBar">
-                <input type="text" id="nameInput" placeholder="Search for recipes">
-                <button type="submit" id="searchBtn"><i class="fa fa-search fa-lg"></i></button>
-                <button type="submit" id="random">Get random recipes</button>
-            </form>
-            
-        </div>
-        <section class="searchResults"></section>
-
+      <h1>Search recipes by name or ingredients</h1>
+      <div class="searchContainer">
+        <form class="searchBar">
+          <input type="text" id="nameInput" placeholder="Search for recipes" />
+          <button type="submit" id="searchBtn" onclick="searchRecipe">
+            <i class="fa fa-search fa-lg"></i>
+          </button>
+          <button type="submit" id="random">Get random recipes</button>
+        </form>
+      </div>
+      <section class="showRecipes">
+        <img id="picture" />  
+        <h3 id="name"></h3>
+        <p>Number of Servings: <span id="numOfServing"></span></p>
+        <p>Ingredients: <span id="components"></span></p>
+        <p>Instructions: <span id="instructions"></span></p>
+      </section>
     </main>
-    
+
     <footer>
-        <p>Assignment for DGM2760 by Macy Lau</p>
+      <p>Assignment for DGM2760 by Macy Lau</p>
     </footer>
     <script type="text/JavaScript" src="js/main.js"></script>
-</body>
+  </body>
 </html>
