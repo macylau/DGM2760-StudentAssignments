@@ -1,34 +1,44 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
-		'X-RapidAPI-Key': 'ab3f733cb0mshb4a3f63d8e7060fp14c793jsnee717486e28c'
-	}
-};
+async function showResults(searchWiki) {
+  const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchWiki}`;
+  await fetch(endpoint)
+    .then((response) => response.json())
+    .then((data) => {
+      const results = data.query.search;
+      displayResults(results);
+    })
+    .catch(() => console.log(error));
+}
 
+function handleSubmit(event) {
+  event.preventDefault();
 
-fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&q=pho', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+  const input = document.querySelector(".searchValue").value;
+  if (input == "") {
+    alert("Please enter something to search");
+  }
 
+  const searchWiki = input.trim();
+  showResults(searchWiki);
+}
 
-// const loadedRecipes = []
+const form = document.querySelector(".searchForm");
+form.addEventListener("submit", handleSubmit);
 
-// async function loadRecipes(from = 0, size = 10) {
-// 	const recipeData = await getAPIData(
-// 	  `https://tasty.p.rapidapi.com/recipes/list?from=${from}&size=${size}&q=pho`,
-// 	)
-// 	for (const nameAndUrl of recipeData.results) {
-// 	  const recipe = await getAPIData(nameAndUrl.url)
-// 	  const simplifiedRecipes = {
-// 		name: recipe.name,
-// 		num_servings: recipe.num_servings,
-// 		ingredients: recipe.sections[0].components,
-// 		instructions: recipe.instructions,
-// 	  }
-// 	  console.log(recipe.sections[0].components)
-// 	  loadedRecipes.push(simplifiedRecipes)
-// 	  populateRecipes(simplifiedRecipes)
-// 	}
-//   }
+function displayResults(results) {
+  const wikiResults = document.querySelector(".wikiResults");
+  wikiResults.innerHTML = " ";
+  results.forEach((result) => {
+    const url = encodeURI(`https://en.wikipedia.org/wiki/${result.title}`);
+
+    wikiResults.insertAdjacentHTML(
+      "beforeend",
+      `<div class="resultList" >
+        <h3 class="resultList-title">
+          <a href="${url}" target="_blank" rel="noopener">${result.title}</a>
+        </h3>
+        <span class="resultList-snippet">${result.snippet}</span><br>
+        <a href="${url}" class="resultList-link" target="_blank" rel="noopener">${url}</a>
+      </div>`
+    );
+  });
+}
