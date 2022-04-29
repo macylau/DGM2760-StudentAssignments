@@ -32,12 +32,12 @@ function displayResults(results) {
 
     wikiResults.insertAdjacentHTML(
       "beforeend",
-      `<div class="resultList" >
+      `<div class="resultList" onclick="location.href='${url}';">
         <h3 class="resultList-title">
-          <a href="${url}" target="_blank" rel="noopener">${result.title}</a>
+          <a href="${url}" target="_blank">${result.title}</a>
         </h3>
-        <span class="resultList-snippet">${result.snippet}</span><br>
-        <a href="${url}" class="resultList-link" target="_blank" rel="noopener">${url}</a>
+        <span class="resultList-detail">${result.snippet}...</span>
+        <a href="${url}" class="readMore" target="_blank">Read More</a>
       </div>`
     );
   });
