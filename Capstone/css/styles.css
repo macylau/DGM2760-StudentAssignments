@@ -48,7 +48,7 @@ main {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 200;
-  border: 2px solid rgb(134, 165, 201);
+  border: 2px solid rgb(100, 143, 192);
   border-radius: 15px 0px 0px 15px;
   border-right: 0;
   background: none;
@@ -56,13 +56,13 @@ main {
 
 .searchBtn {
   padding: 10px 30px;
-  background: rgb(134, 165, 201);
+  background: rgb(100, 143, 192);
   border: none;
   border-radius: 0px 15px 15px 0px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: rgb(245, 245, 245);
+  color: white;
   cursor: pointer;
   position: relative;
 }
