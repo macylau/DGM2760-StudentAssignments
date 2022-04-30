@@ -9,6 +9,11 @@ async function showResults(searchWiki) {
     .catch(() => console.log(error));
 }
 
+const webTitle = document.createElement("h1");
+webTitle.textContent = "Little Wiki Search";
+const header = document.querySelector("header");
+header.appendChild(webTitle);
+
 function handleSubmit(event) {
   event.preventDefault();
 
